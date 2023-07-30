@@ -1,0 +1,35 @@
+stl (Standard Template Library)
+all these operations have complexity of o(n)
+	a) vector:- dynamic array as it increses its size suppose we have elements to be inserted in array then array will takes size of 4 elements in case of inserting 5th element it gives error(array has fixed size) but in case of vector it double's its size to 4*2 and inserts 5th element
+			myvector.back()
+			myvector.front()
+			1)a.capacity() shows actual space and size() shows no of elements
+			2)a.at(IndexNo) shows element at given Index
+			3)vector<int> v(5,1) 5=size of vector and 1 is initialized value for all elements
+			4) v.erase(v.begin(),v.end())  range deletion all clear v.erase(v.begin(),v.begin()+2) element at index 2 deleted
+	b) Deque:-no contagious memory allocation(like in arrays and vectors) and insertion and deletion operation can be performed on both ends
+			its dynamic and random access is possible
+			1)deque<int> d  d.push_back push_front .pop_back .pop_front and also d.at(Index) to access elements
+			2) erase same as that in vector
+	c) List :- basically a doubly linked list (two pointers front and back pointer)
+			1)list<int> l  cannot access random element as it is linked list
+			2) l.push_back .push_front also for pop front and back.erase(l.begin()) 
+
+	d) stack :- plates like structure (last in first out)
+			1) stack<string> stk; stk.push("name") stk.pop() stk.empty() .size() stk.top() gives top wala element
+
+	e) queue :- first in first out
+			1) queue<int> q; q.push() q.front() gives 1st element and q.pop() removes first element from queue
+
+	f) priority queue:- it is a queue in which first element is either largest(by default in c++) or smallest and it is either decreasing(non increasing) or increasing(non decreasing) respectively
+			1)priority_queue <int> maxi; (max heap by default) first element is maximmum
+			2)priority_queue <int,vector<int>,greater<int>> mini; min heap as first element is smallest
+
+	g) set :- gives unique elements and return elements in sorted order
+ 			1)set<int> s; s.insert(numbertobeinserted) 
+
+			for(auto i:s)
+				cout<<i<<endl;  
+		making iterartor :- set<int> :: iterator it =s.begin()
+
+	h) map :-				
