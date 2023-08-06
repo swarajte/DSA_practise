@@ -206,9 +206,14 @@ int main()
     // mp['8']="tuv";
     // mp['9']="wxyz";
 
-    int k=2;
-    vector<int> nums={4,6,1,2};
-    cout<<maximumBeauty(nums,k);
+    // int k=2;
+    // vector<int> nums={4,6,1,2};
+    // cout<<maximumBeauty(nums,k);
+
+    vector<int> v={1,2,3,4,5,6,7,8};
+    v.erase(v.begin()+i);  //for erasing ith index wala
+    v.clear(); // for emptying vector
+    
 
     return 0;
 }
