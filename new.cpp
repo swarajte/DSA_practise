@@ -192,6 +192,8 @@ int main()
     //     cout<<"false";
     // }
 
+    // mp.count(k) where k is key will give 1 if key is present and 0 if not present
+
     // vector<int> parent={-1,0,0,1,1,2};
     // string s="acaabc";
     // countPalindromePaths(parent,s);
