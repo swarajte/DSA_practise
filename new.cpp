@@ -212,9 +212,11 @@ int main()
     // vector<int> nums={4,6,1,2};
     // cout<<maximumBeauty(nums,k);
 
-    vector<int> v={1,2,3,4,5,6,7,8};
-    v.erase(v.begin()+i);  //for erasing ith index wala
-    v.clear(); // for emptying vector
+    // vector<int> v={1,2,3,4,5,6,7,8};
+    // v.erase(v.begin()+i);  //for erasing ith index wala
+    // v.clear(); // for emptying vector
+
+    // __builtin_popcount(n)  // gives us the number of 1's in binary representation of n.
     
 
     return 0;
